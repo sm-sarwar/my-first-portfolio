@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur (10px);
+}
+li{
+   float: left;
+}
+
+li a{
+    display: block; 
+    color: aliceblue;
+    text-decoration: none;
+    padding: 18px 16px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.active{
+    background-color: rgb(245, 242, 239);
+    color: black;
+    height: 15px;
+    text-align: center;
+    padding-top: 5px;
+    margin-top:10px;
+    margin-right: 200px;
+    border-radius: 6px;
+    
+}
+.active:hover{
+    background-color:chocolate;
+    box-shadow:0 4px 8px 0 rgba(240, 96, 12, 0.938), 0 6px 20px 0 rgba(235, 91, 8, 0.925) ;
+    transition: .3s ease-in-out;
+    color: white;
+}
+li a:hover{
+    color: chocolate;
+    text-decoration: underline;
+    transition: .5s;
+}
+span{
+    color: coral;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s ease-in;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: coral;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .3s ease;
+    cursor: pointer; 
+}
+.btn-2:hover{
+    background-color: white;
+    color: coral;
+    border: 2px solid coral;
+    transition: 0.5s ease-in;
+}
+.img-box img{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 450px;
+}
